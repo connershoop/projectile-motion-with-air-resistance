@@ -1,5 +1,38 @@
 # projectile-motion-with-air-resistance
 
+## Instruction for use
+`npm i projectile-motion-with-air-resistance`
+```
+import projectile from 'projectile-motion-with-air-resistance
+console.log(
+  projectile(
+    initalVelocity= 10, 
+    launchAngleInRadians= 0.5, 
+    dragCoeffiecient= 4, 
+    mass= 3, 
+    crossSectionalArea= 2, 
+    gravitationAlCoefficient= 9.82, 
+    airDensity= 1 )
+    )
+
+// Output: 
+//{
+//  maximumHeight: 0.33662516367922946,
+//  horizontalRange: 1.3804636233789596,
+//  timeOfFlight: 0.5067819524975948
+//}
+```
+## Parameters
+* **initalVelocity**: Initial velocity of the projectile in meters per second.
+* **launchAngleInRadians**: Launch angle of the projectile in radians.
+* **dragCoeffiecient**: Drag coefficient of the projectile. (spherical projectile)
+* **mass**: Mass of the projectile in kilograms (kg).
+* **crossSectionalArea**: Cross-sectional area of the spherical projectile in meters. (pi * radius^2)
+* **gravitationAlCoefficient**: Acceleration due to gravity in meters per second squared (m/s^2). 
+  * default: 9.81
+* **airDensity**: Density of the air (fluid) which the projectile is traveling through in kilograms per meters cubed (kg/m^3)
+  * default: 1.29
+
 ## About this repository
 This repository is the source of the projectile-motion-with-air-resistance npm package,  It is a function that uses numerical integration and newtons method to calculate the distance, time of flight, and maximum height of a projectile experiencing air resistance proportional to velocity squared.  See https://en.wikipedia.org/wiki/Projectile_motion for more information on this interesting problem in physics. 
 
@@ -8,3 +41,5 @@ The solution for this problem with air resistance proportional to the velocity o
 
 ## What does it accomplish
 This package accomplishes that solution to the problem described above, in javascript, in case anyone ever wants to do these calculations in a web browser.
+
+## What can be improved? 
