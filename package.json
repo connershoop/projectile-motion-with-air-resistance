@@ -1,0 +1,24 @@
+{
+  "name": "projectile-motion-with-air-resistance",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "This package will take a variety of inputs concerning a spherical projectile, and it's initial conditions, and calculate it's trajectory with air resistance proportional to the velocity squared.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "source": "ts/",
+  "target": "dist/",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "author": "conner-shoop",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.13",
+    "integrate-adaptive-simpson": "^1.1.1",
+    "newton-raphson-method": "^1.0.2"
+  }
+}
