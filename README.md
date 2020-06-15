@@ -6,25 +6,29 @@ This function calculates the distance, maximum height, and time of flight of the
 
 ## Instructions for use
 `npm i projectile-motion-with-air-resistance`
+
+`projectile(initalVelocity,launchAngleInRadians, dragCoeffiecient, mass, crossSectionalArea, gravitationAlCoefficient, airDensity)`
 ```
 import projectile from 'projectile-motion-with-air-resistance
+
 console.log(
+
   projectile(
-    initalVelocity= 10, 
-    launchAngleInRadians= 0.5, 
-    dragCoeffiecient= 4, 
-    mass= 3, 
-    crossSectionalArea= 2, 
-    gravitationAlCoefficient= 9.82, 
-    airDensity= 1 )
+    initalVelocity=10, 
+    launchAngleInRadians=0.5, 
+    dragCoeffiecient=4, 
+    mass=3, 
+    crossSectionalArea=2, 
+    gravitationAlCoefficient=9.82, 
+    airDensity=1 )
     )
 
 // Output: 
-//{
-//  maximumHeight: 0.33662516367922946,
-//  horizontalRange: 1.3804636233789596,
-//  timeOfFlight: 0.5067819524975948
-//}
+//  {
+//    maximumHeight: 0.33662516367922946,
+//    horizontalRange: 1.3804636233789596,
+//    timeOfFlight: 0.5067819524975948
+//  }
 ```
 ## Parameters
 * **initalVelocity**: Initial velocity of the projectile in meters per second.
