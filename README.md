@@ -1,6 +1,10 @@
 # projectile-motion-with-air-resistance
 
-## Instruction for use
+## What does this do?
+  
+This function calculates the distance, maximum height, and time of flight of the flight of a projectile, fired over flat ground, experiencing air resistance proportional to its velocity squared.
+
+## Instructions for use
 `npm i projectile-motion-with-air-resistance`
 ```
 import projectile from 'projectile-motion-with-air-resistance
@@ -43,3 +47,4 @@ The solution for this problem with air resistance proportional to the velocity o
 This package accomplishes that solution to the problem described above, in javascript, in case anyone ever wants to do these calculations in a web browser.
 
 ## What can be improved? 
+The approximations surroudning numerical integration, and newton's method could be improved.  The air resistance proportional to the velocity (not velocity squared) could be factored in.  As well as the velocity cubed.  The density of air is assumed to be constant with height, as is the acceleration due to gravity, neither of which is true. The curve of the earth is not accounted for. This is only a spherical projectile, other shapes could be accounted for. The drag coefficient could also be accounted for 
