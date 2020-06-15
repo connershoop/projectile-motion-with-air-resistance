@@ -1,8 +1,12 @@
 {
   "name": "projectile-motion-with-air-resistance",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "commonjs",
   "description": "This package will take a variety of inputs concerning a spherical projectile, and it's initial conditions, and calculate it's trajectory with air resistance proportional to the velocity squared.",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/connershoop/projectile-motion-with-air-resistance"
+  },
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
